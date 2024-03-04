@@ -1,8 +1,8 @@
 import Fighter from '../Fighter';
 import Battle from './Battle';
 
-export default class PVP<T extends Fighter> extends Battle {
-  constructor(private player1: T, private player2: T) {
+export default class PVP extends Battle {
+  constructor(public player1: Fighter, public player2: Fighter) {
     super(player1);
   }
 
